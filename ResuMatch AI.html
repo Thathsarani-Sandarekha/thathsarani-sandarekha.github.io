@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ResuMatch AI - Portfolio Details</title>
+  <meta name="description"
+    content="ResuMatch AI: Resume parsing and JD matching system using Groq LLaMA 3, SentenceTransformers, and Streamlit. Produces structured JSON, match scores, subscores, and actionable feedback." />
+  <meta name="keywords"
+    content="ResuMatch AI, resume parsing, job description matching, Streamlit, Groq, LLaMA 3, SentenceTransformers, semantic similarity, pdfplumber, recruitment AI" />
+
+  <!-- Favicons -->
+  <link href="assets/img/profile.png" rel="icon">
+  <link href="assets/img/profile.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="Home" class="logo d-flex align-items-center">
+        <img src="assets/img/logo w.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#expertise">Expertise</a></li>
+          <li><a href="index.html#resume">Resume</a></li>
+          <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Project Hero -->
+    <div class="page-title dark-background project-hero">
+      <div class="container position-relative text-center">
+
+        <span class="badge-pill">
+          <i class="bi bi-file-earmark-person"></i> Hiring AI • Resume QA • JD Matching
+        </span>
+
+        <h1>ResuMatch AI</h1>
+
+        <p class="muted">
+          Intelligent resume parsing + job description matching system.
+          Generates <strong>structured JSON</strong>, a <strong>match score</strong> with subscores, and <strong>actionable feedback</strong>
+          using Groq LLaMA 3 and semantic similarity.
+        </p>
+
+        <!-- Tech Chips -->
+        <div class="chip-group mt-3">
+          <span class="chip"><i class="bi bi-window"></i> Streamlit</span>
+          <span class="chip"><i class="bi bi-robot"></i> Groq LLaMA 3.3 (70B)</span>
+          <span class="chip"><i class="bi bi-diagram-3"></i> SentenceTransformers</span>
+          <span class="chip"><i class="bi bi-filetype-pdf"></i> pdfplumber</span>
+          <span class="chip"><i class="bi bi-braces"></i> JSON Output</span>
+        </div>
+
+        <div class="project-cta mt-3">
+          <a class="pill-btn pill-btn-sm" href="index.html#portfolio">
+            <i class="bi bi-grid"></i> Back to Portfolio
+          </a>
+
+          <!-- Update this repo link -->
+          <a class="pill-btn pill-btn-sm" href="https://github.com/Thathsarani-Sandarekha/ResuMatch-AI" target="_blank" rel="noopener">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+
+          <!-- Optional -->
+          <a class="pill-btn pill-btn-sm" href="https://www.youtube.com/watch?v=Hreb0Oo9MNA" target="_blank" rel="noopener">
+            <i class="bi bi-play-circle"></i> Demo Video
+          </a>
+        </div>
+
+        <nav class="breadcrumbs mt-4">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="current">ResuMatch AI</li>
+          </ol>
+        </nav>
+
+      </div>
+    </div>
+
+    <!-- Details -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- LEFT -->
+          <div class="col-lg-8">
+
+            <!-- Slider -->
+            <div class="portfolio-details-slider swiper init-swiper section-card">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": { "delay": 4500 },
+                  "slidesPerView": "auto",
+                  "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <!-- Replace these with your actual screenshot paths -->
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/resumatch/front.png" class="glightbox" data-gallery="resumatch">
+                    <img src="assets/img/portfolio/resumatch/front.png" alt="ResuMatch AI - upload resume + paste JD">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/resumatch/q1.png" class="glightbox" data-gallery="resumatch">
+                    <img src="assets/img/portfolio/resumatch/q1.png" alt="ResuMatch AI - parsed resume JSON">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/resumatch/q2.png" class="glightbox" data-gallery="resumatch">
+                    <img src="assets/img/portfolio/resumatch/q2.png" alt="ResuMatch AI - JD match score and breakdown">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/resumatch/q3.png" class="glightbox" data-gallery="resumatch">
+                    <img src="assets/img/portfolio/resumatch/q3.png" alt="ResuMatch AI - feedback and recommendations">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/resumatch/q4.png" class="glightbox" data-gallery="resumatch">
+                    <img src="assets/img/portfolio/resumatch/q4.png" alt="ResuMatch AI - semantic similarity score">
+                  </a>
+                </div>
+
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Subtopic Cards -->
+            <div class="section-card mt-4">
+              <h3>What it does</h3>
+              <ul class="muted list-tight mb-0">
+                <li>Parses a PDF resume into structured JSON (name, contact, skills, experience).</li>
+                <li>Scores resume ↔ job description match with explanations.</li>
+                <li>Provides subscores (Skill Match, Role Relevance, Tech Stack, Industry Fit, Communication).</li>
+                <li>Runs embedding-based semantic similarity for an additional “grounded” signal.</li>
+                <li>Generates actionable feedback to improve both JD-fit and resume quality.</li>
+              </ul>
+            </div>
+
+            <div class="section-card mt-3">
+              <h3>Why it matters</h3>
+              <p class="muted mb-0">
+                Recruiters need fast shortlisting, but keyword-only filters miss strong candidates.
+                ResuMatch AI combines LLM reasoning with semantic similarity to produce a clear, explainable evaluation.
+              </p>
+            </div>
+
+            <div class="section-card mt-3">
+              <h3>How it works</h3>
+              <ol class="muted list-tight mb-0">
+                <li><strong>PDF parsing:</strong> extract raw text using pdfplumber.</li>
+                <li><strong>Structured extraction:</strong> Groq LLaMA returns normalized JSON fields.</li>
+                <li><strong>Semantic similarity:</strong> SentenceTransformer embeddings compute JD–resume similarity.</li>
+                <li><strong>LLM scoring:</strong> LLaMA generates overall score + subscores + justification.</li>
+                <li><strong>Feedback:</strong> targeted improvement points for skills, clarity, and relevance.</li>
+              </ol>
+            </div>
+
+            <div class="section-card mt-3">
+              <h3>Roadmap</h3>
+              <ul class="muted list-tight mb-0">
+                <li>Batch resume ranking (Top 5–10) using Vector DB + ranking logic</li>
+                <li>Export results to CSV</li>
+                <li>Chat-style assistant: ask questions about a resume (e.g., “Does this candidate know Docker?”)</li>
+                <li>Admin dashboard for multi-user recruiter workflows</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col-lg-4">
+
+            <div class="portfolio-info section-card">
+              <h3>Quick Facts</h3>
+              <ul>
+                <li><strong>Category</strong>: Resume AI / Recruitment</li>
+                <li><strong>App</strong>: Streamlit</li>
+                <li><strong>LLM</strong>: Groq LLaMA 3.3 70B</li>
+                <li><strong>Embeddings</strong>: all-MiniLM-L6-v2</li>
+                <li><strong>Parsing</strong>: pdfplumber</li>
+                <li><strong>Outputs</strong>: JSON + scores + feedback</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer footer-bg">
+    <div class="container text-center">
+
+      <a href="index.html" class="footer-logo">
+        <img src="assets/img/logo w.png" alt="Thathsarani Sandarekha Logo">
+      </a>
+      <p>Machine Learning Engineer • AI Engineer • Data Scientist</p>
+
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/thathsarani-sandarekha/" target="_blank" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/Thathsarani-Sandarekha" target="_blank" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a href="https://medium.com/@thathsaranisandarekha" target="_blank" aria-label="Medium">
+          <i class="bi bi-medium"></i>
+        </a>
+      </div>
+
+      <div class="container mt-4">
+        <div class="copyright">
+          <span>©</span> <strong class="px-1 sitename">TS</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by Thathsarani Sandarekha
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Air Quality Data Assistant | Thathsarani Sandarekha</title>
+  <meta name="description" content="LLM-powered AI agent that answers natural language questions over multi-room air quality NDJSON sensor data, returning tables, charts, and summaries without a database.">
+  <meta name="keywords" content="AI Agent, LLM, FastAPI, Pandas, Matplotlib, Groq, LLaMA3, NDJSON, Data Analytics">
+
+  <!-- Favicons -->
+  <link href="assets/img/profile.png" rel="icon">
+  <link href="assets/img/profile.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="Home" class="logo d-flex align-items-center">
+        <img src="assets/img/logo w.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#expertise">Expertise</a></li>
+          <li><a href="index.html#resume">Resume</a></li>
+          <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title / Hero -->
+    <div class="page-title dark-background project-hero">
+      <div class="container position-relative text-center">
+
+
+        <div class="badge-pill mb-3">
+          <i class="bi bi-cpu"></i>
+          AI Agent • Production System
+        </div>
+
+        <h1>Air Quality Data Assistant</h1>
+
+        <p class="muted" style="max-width: 980px;">
+          An AI-powered web app where users ask natural language questions about multi-room air quality sensor data.
+          The system generates, executes, and summarizes analyses — returning tables, charts, and plain-English insights
+          directly from NDJSON files (no database required).
+        </p>
+
+        <div class="chip-group mt-3">
+          <span class="chip"><i class="bi bi-lightning-charge"></i> FastAPI</span>
+          <span class="chip"><i class="bi bi-bar-chart"></i> Pandas + Matplotlib</span>
+          <span class="chip"><i class="bi bi-robot"></i> Groq LLaMA3 (70B)</span>
+          <span class="chip"><i class="bi bi-diagram-3"></i> Semantic Normalization</span>
+          <span class="chip"><i class="bi bi-filetype-json"></i> NDJSON (per room)</span>
+        </div>
+
+
+        <div class="project-cta mt-3">
+          <a class="pill-btn pill-btn-sm" href="index.html">
+            <i class="bi bi-grid"></i> Back to Portfolio
+          </a>
+
+          <a class="pill-btn pill-btn-sm" href="https://github.com/Thathsarani-Sandarekha/data_analysis_agent" target="_blank" rel="noopener">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+
+          <!-- Optional: add a demo video link if you have one -->
+          <a class="pill-btn pill-btn-sm" href="https://www.youtube.com/watch?v=B-40bVeonSQ" target="_blank" rel="noopener">
+            <i class="bi bi-play-circle"></i> Demo Video
+          </a>
+        </div>
+
+        <nav class="breadcrumbs mt-3">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="current">Air Quality Data Assistant</li>
+          </ol>
+        </nav>
+
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+<section id="portfolio-details" class="portfolio-details section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <!-- LEFT -->
+      <div class="col-lg-8">
+
+        <!-- Slider -->
+        <div class="portfolio-details-slider swiper init-swiper section-card">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": { "delay": 4500 },
+              "slidesPerView": "auto",
+              "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true }
+            }
+          </script>
+
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/airq/front.png" alt="Air Quality Data Assistant - UI">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/airq/q1.png" alt="Summary + Table output">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/airq/q2.png" alt="Chart output">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/airq/q3.png" alt="Example query">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/airq/q4.png" alt="Day-of-week analysis">
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- After slider -->
+        <div class="section-card mt-4">
+          <h3>What it is</h3>
+          <p class="muted mb-0">
+            A file-first AI analytics agent that answers natural-language questions over multi-room NDJSON air-quality logs,
+            returning <strong>tables</strong>, <strong>charts</strong>, and <strong>plain-English summaries</strong> — without a database.
+          </p>
+        </div>
+
+        <div class="section-card mt-3">
+          <h3>Why it matters</h3>
+          <p class="muted mb-0">
+            Turns messy sensor logs (inconsistent field names across rooms) into instant insights using LLM-guided code generation + safe execution.
+          </p>
+        </div>
+
+        <div class="section-card mt-3">
+          <h3>Highlights</h3>
+          <ul class="muted list-tight mb-0">
+            <li>Semantic normalization for inconsistent columns (e.g., CO2 (ppm) vs CO₂).</li>
+            <li>LLM decides: table / chart / both.</li>
+            <li>Pandas + Matplotlib code generation and controlled execution.</li>
+            <li>Clean error handling and formatted outputs.</li>
+          </ul>
+        </div>
+
+        <div class="section-card mt-3">
+          <h3>My role</h3>
+          <p class="muted mb-0">
+            Built the end-to-end pipeline (ingestion → normalization → LLM planning → code exec → summary) and integrated backend + UI.
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-4">
+
+        <div class="portfolio-info section-card">
+          <h3>Quick Facts</h3>
+          <ul>
+            <li><strong>Category</strong>: AI Agent / Data Analytics</li>
+            <li><strong>Model</strong>: LLaMA3-70B (Groq)</li>
+            <li><strong>Backend</strong>: FastAPI</li>
+            <li><strong>Analytics</strong>: Pandas, Matplotlib</li>
+            <li><strong>Input</strong>: NDJSON (per room)</li>
+            <li><strong>Output</strong>: Summary + Table + Chart</li>
+          </ul>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <footer id="footer" class="footer footer-bg">
+    <div class="container text-center">
+
+      <a href="index.html" class="footer-logo">
+        <img src="assets/img/logo w.png" alt="Thathsarani Sandarekha Logo">
+      </a>
+      <p>Machine Learning Engineer • AI Engineer • Data Scientist</p>
+
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/thathsarani-sandarekha/" target="_blank" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/Thathsarani-Sandarekha" target="_blank" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a href="https://medium.com/@thathsaranisandarekha" target="_blank" aria-label="Medium">
+          <i class="bi bi-medium"></i>
+        </a>
+      </div>
+
+      <div class="container mt-4">
+        <div class="copyright">
+          <span>©</span> <strong class="px-1 sitename">TS</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by Thathsarani Sandarekha
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ChatGroq - Portfolio Details</title>
+  <meta name="description"
+    content="ChatGroq: Multi-file conversational QA over PDF, CSV, and Excel using LangChain RAG, FAISS, HuggingFace embeddings, and Groq LLaMA3 with source transparency." />
+  <meta name="keywords"
+    content="ChatGroq, LangChain, RAG, FAISS, Streamlit, Groq, LLaMA3, PDF QA, CSV QA, Excel QA, embeddings, semantic search" />
+
+  <!-- Favicons -->
+  <link href="assets/img/profile.png" rel="icon">
+  <link href="assets/img/profile.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="Home" class="logo d-flex align-items-center">
+        <img src="assets/img/logo w.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#expertise">Expertise</a></li>
+          <li><a href="index.html#resume">Resume</a></li>
+          <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Project Hero -->
+    <div class="page-title dark-background project-hero">
+      <div class="container position-relative text-center">
+
+        <span class="badge-pill">
+          <i class="bi bi-chat-dots"></i> RAG • Multi-File QA • Streamlit
+        </span>
+
+        <h1>ChatGroq</h1>
+
+        <p class="muted">
+          Multi-file conversational Q&A over <strong>PDF</strong>, <strong>CSV</strong>, and <strong>Excel</strong>.
+          Built with LangChain + FAISS retrieval and Groq LLaMA3, with retrieved source chunks shown for transparency.
+        </p>
+
+        <!-- Tech Chips -->
+        <div class="chip-group mt-3">
+          <span class="chip"><i class="bi bi-window"></i> Streamlit</span>
+          <span class="chip"><i class="bi bi-diagram-3"></i> LangChain</span>
+          <span class="chip"><i class="bi bi-database"></i> FAISS</span>
+          <span class="chip"><i class="bi bi-robot"></i> Groq LLaMA3</span>
+          <span class="chip"><i class="bi bi-filetype-pdf"></i> PDF/CSV/Excel</span>
+        </div>
+
+        <div class="project-cta mt-3">
+          <a class="pill-btn pill-btn-sm" href="index.html#portfolio">
+            <i class="bi bi-grid"></i> Back to Portfolio
+          </a>
+
+          <a class="pill-btn pill-btn-sm" href="https://github.com/Thathsarani-Sandarekha/ChatGroq" target="_blank" rel="noopener">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+        </div>
+
+        <nav class="breadcrumbs mt-4">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="current">ChatGroq</li>
+          </ol>
+        </nav>
+
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- LEFT -->
+          <div class="col-lg-8">
+
+            <!-- Slider -->
+            <div class="portfolio-details-slider swiper init-swiper section-card">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": { "delay": 4500 },
+                  "slidesPerView": "auto",
+                  "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/chatgroq/ui-1.jpg" class="glightbox" data-gallery="chatgroq">
+                    <img src="assets/img/portfolio/chatgroq/ui-1.jpg" alt="ChatGroq - upload multiple files">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/chatgroq/ui-2.jpg" class="glightbox" data-gallery="chatgroq">
+                    <img src="assets/img/portfolio/chatgroq/ui-2.jpg" alt="ChatGroq - QA example 1">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/chatgroq/ui-3.jpg" class="glightbox" data-gallery="chatgroq">
+                    <img src="assets/img/portfolio/chatgroq/ui-3.jpg" alt="ChatGroq - QA example 2">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/chatgroq/ui-4.jpg" class="glightbox" data-gallery="chatgroq">
+                    <img src="assets/img/portfolio/chatgroq/ui-4.jpg" alt="ChatGroq - QA example 3">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/chatgroq/ui-5.jpg" class="glightbox" data-gallery="chatgroq">
+                    <img src="assets/img/portfolio/chatgroq/ui-5.jpg" alt="ChatGroq - retrieved chunks with sources">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/chatgroq/ui-6.jpg" class="glightbox" data-gallery="chatgroq">
+                    <img src="assets/img/portfolio/chatgroq/ui-6.jpg" alt="ChatGroq - another example">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="assets/img/portfolio/chatgroq/ui-7.jpg" class="glightbox" data-gallery="chatgroq">
+                    <img src="assets/img/portfolio/chatgroq/ui-7.jpg" alt="ChatGroq - another example">
+                  </a>
+                </div>
+
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+
+            
+            <!-- Content Cards (Simple) -->
+            <div class="section-card mt-4" data-aos="fade-up" data-aos-delay="120">
+              <h3>What it is</h3>
+              <p class="muted mb-0">
+                ChatGroq is a multi-document conversational QA system. Users upload PDFs, CSVs, and Excel sheets together,
+                ask questions in natural language, and the chatbot retrieves the most relevant chunks before answering —
+                showing file-backed sources for trust and transparency.
+              </p>
+            </div>
+
+            <div class="section-card mt-3" data-aos="fade-up" data-aos-delay="150">
+              <h3>Highlights</h3>
+              <ul class="muted list-tight mb-0">
+                <li>Multi-file upload: PDF + CSV + XLS/XLSX in one session.</li>
+                <li>Chunking + embeddings + FAISS similarity search for fast retrieval.</li>
+                <li>LLM answers restricted to retrieved context (reduces hallucinations).</li>
+                <li>Displays retrieved chunks and file sources to validate answers.</li>
+                <li>Built to extend into multimodal RAG (image reasoning via LLaVA).</li>
+              </ul>
+            </div>
+
+            <div class="section-card mt-3" data-aos="fade-up" data-aos-delay="180">
+              <h3>Stack</h3>
+              <p class="muted mb-0">
+                Streamlit, LangChain, FAISS, HuggingFace Embeddings, Groq API (LLaMA3).
+              </p>
+            </div>
+
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col-lg-4">
+
+            <div class="portfolio-info section-card">
+              <h3>Quick Facts</h3>
+              <ul>
+                <li><strong>Category</strong>: RAG / Document QA</li>
+                <li><strong>Inputs</strong>: PDF, CSV, Excel</li>
+                <li><strong>Embedding</strong>: HuggingFaceEmbeddings</li>
+                <li><strong>Vector Store</strong>: FAISS</li>
+                <li><strong>LLM</strong>: Groq LLaMA3</li>
+                <li><strong>UI</strong>: Streamlit</li>
+              </ul>
+            </div>
+
+            <div class="portfolio-description section-card mt-4">
+              <h3>Current upgrade</h3>
+              <p class="muted mb-0">
+                Extending to a <strong>multimodal RAG</strong> system with support for image-based reasoning using <strong>LLaVA</strong>
+                (e.g., screenshots, charts, image-heavy PDFs).
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer footer-bg">
+    <div class="container text-center">
+
+      <a href="index.html" class="footer-logo">
+        <img src="assets/img/logo w.png" alt="Thathsarani Sandarekha Logo">
+      </a>
+      <p>Machine Learning Engineer • AI Engineer • Data Scientist</p>
+
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/thathsarani-sandarekha/" target="_blank" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/Thathsarani-Sandarekha" target="_blank" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a href="https://medium.com/@thathsaranisandarekha" target="_blank" aria-label="Medium">
+          <i class="bi bi-medium"></i>
+        </a>
+      </div>
+
+      <div class="container mt-4">
+        <div class="copyright">
+          <span>©</span> <strong class="px-1 sitename">TS</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by Thathsarani Sandarekha
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
