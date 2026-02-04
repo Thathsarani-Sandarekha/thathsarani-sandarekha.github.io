@@ -1609,6 +1609,13 @@ section,
   opacity: 0.9;
 }
 
+.hero-mainline {
+  margin-top: 14px;
+  font-size: 10px;
+  font-weight: 200;
+  line-height: 1.25;
+}
+
 .hero-headline {
   margin-top: 14px;
   font-size: 28px;
